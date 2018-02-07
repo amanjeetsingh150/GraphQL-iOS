@@ -2,20 +2,35 @@
 //  AppDelegate.swift
 //  GraphQL-iOS
 //
-//  Created by Bhagat  Singh on 07/02/18.
-//  Copyright © 2018 Bhagat Singh. All rights reserved.
+//  Created by Amanjeet Singh on 07/02/18.
+//  Copyright © 2018 Amanjeet Singh. All rights reserved.
 //
 
 import UIKit
+import Apollo
+
+let graphQLEndpoint = "https://api.github.com/graphql"
+let apollo: ApolloClient = {
+    let configuration = URLSessionConfiguration.default
+    // Add additional headers as needed
+    configuration.httpAdditionalHeaders = ["Authorization": "Bearer \(constants.AUTH_TOKEN)"] // Replace `<token>`
+    
+    let url = URL(string: graphQLEndpoint)!
+    
+    return ApolloClient(networkTransport: HTTPNetworkTransport(url: url, configuration: configuration))
+}()
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        
+        
         return true
     }
 
