@@ -4,6 +4,6 @@ https://developer.github.com/v4/
 <br><br>
 Thanks to <a href="https://github.com/xorforce">Bhagat Singh</a> who helped me converting my android code to iOS version.
 <br>
-Screenshots:
+<b>Screenshots:</b>
 <br><br>
-<img src="autogif.gif" width="250px" height="400px"/>
+<img src="graphql-ios.gif"/> &nbsp; <img src="ql.gif"/>
