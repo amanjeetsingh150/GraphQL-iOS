@@ -10,6 +10,6 @@ import Foundation
 
 struct constants{
   
-    static let AUTH_TOKEN:String="9e188dc125a50a68649f5074cebf3fb346ee6530"
+    static let AUTH_TOKEN:String="<YOUR_AUTH_TOKEN_HERE>"
 
 }
